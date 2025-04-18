@@ -756,11 +756,11 @@ button {
 
 /* ==================== Start: Responsive Products Section ==================== */
 
-/* للأجهزة اللوحية (Tablet) */
+/* (Tablet) */
 @media (max-width: 1024px) {
     .products-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px; /* تقليل المسافات بين العناصر */
+        gap: 20px; 
     }
 
     .product-card {
@@ -768,22 +768,22 @@ button {
     }
 
     .product-image {
-        height: 180px; /* تقليل ارتفاع الصور */
+        height: 180px; 
     }
 
     .product-name {
-        font-size: 14px; /* تقليل حجم النص */
+        font-size: 14px;
     }
 
     .sale-price {
-        font-size: 16px; /* تقليل حجم السعر */
+        font-size: 16px; 
     }
 }
 
-/* للهواتف المحمولة (Mobile) */
+/*  (Mobile) */
 @media (max-width: 768px) {
     .products-grid {
-        grid-template-columns: repeat(2, 1fr); /* عرض عمودين فقط */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 15px;
     }
 
@@ -792,7 +792,7 @@ button {
     }
 
     .product-image {
-        height: 150px; /* تقليل ارتفاع الصور أكثر */
+        height: 150px; 
     }
 
     .product-name {
@@ -804,10 +804,10 @@ button {
     }
 }
 
-/* للشاشات الصغيرة جدًا (Small Mobile) */
+/*  (Small Mobile) */
 @media (max-width: 480px) {
     .products-grid {
-        grid-template-columns: 1fr; /* عرض عمود واحد فقط */
+        grid-template-columns: 1fr; 
         gap: 10px;
     }
 
@@ -816,7 +816,7 @@ button {
     }
 
     .product-image {
-        height: 120px; /* تقليل ارتفاع الصور */
+        height: 120px; 
     }
 
     .product-name {
