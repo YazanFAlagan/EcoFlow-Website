@@ -64,7 +64,7 @@ body, html {
     height: 100%;
     font-family: 'Roboto Serif', serif;
     background-color: #f0f0f0;
-    scroll-behavior: smooth; /* Smooth scrolling for better UX */
+    scroll-behavior: smooth; 
 }
 /* ==================== End: Global Styles ==================== */
 
