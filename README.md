@@ -2,65 +2,74 @@
 
 This README outlines the photo structure for different sections of the EcoFlow Website.
 
-## Sections Overview
+## 1. Home Sections Overview
 
-Below are the eight sections where photos are categorized:
+### Home
+![Dashboard Preview Light Mode](HomeScre/Home.png)
+### Features
+![Dashboard Preview Light Mode](HomeScre/Features.png)
+### About
+![Dashboard Preview Light Mode](HomeScre/About.png)
+### Products
+![Dashboard Preview Light Mode](HomeScre/Products.png)
+### Footer
+![Dashboard Preview Light Mode](HomeScre/Footer.png)
 
-### 1. Home
-- **Path**: `HomeScre/Home.png`
--  Features
-- **Path**: `HomeScre/Features.png`
-- About
-- **Path**: `HomeScre/About.png`
-- Products
-- **Path**: `HomeScre/Products.png`
-- Footer
-- **Path**: `HomeScre/Footer.png`
+## 2. Purchase Sections Overview
 
-### 2. Purchase
-Photos related to the purchase process, showcasing products and purchase options.
+### Purchase
+![Dashboard Preview Light Mode](PurchaseScre/Purchase.png)
+### Magnifier
+![Dashboard Preview Light Mode](PurchaseScre/Magnifier.png)
+### Pay
+![Dashboard Preview Light Mode](PurchaseScre/Pay.png)
+### Related
+![Dashboard Preview Light Mode](PurchaseScre/Related.png)
 
-- **Path**: `photos/purchase/`
-- **Examples**: Product catalog images, pricing graphics, purchase buttons.
+## 3. Cart Sections Overview
 
-### 3. Checkout
-Images used in the checkout process to enhance the user flow.
+### Cart
+![Dashboard Preview Light Mode](CartScre/Cart.png)
+### Other
+![Dashboard Preview Light Mode](CartScre/Other.png)
 
-- **Path**: `photos/checkout/`
-- **Examples**: Payment icons, step-by-step flow visuals, confirmation graphics.
+## 4. CheckOut Sections Overview
 
-### 4. Customer Service
-Photos and icons used for the customer service section of the website.
+### Checkout
+![Dashboard Preview Light Mode](CheckoutScre/Checkout.png)
+### Checkout
+![Dashboard Preview Light Mode](CheckoutScre/2.png)
+### Proggres
+![Dashboard Preview Light Mode](CheckoutScre/Proggres.png)
+### Payment
+![Dashboard Preview Light Mode](CheckoutScre/Payment.png)
+### Review
+![Dashboard Preview Light Mode](CheckoutScre/Review.png)
+### Final
+![Dashboard Preview Light Mode](CheckoutScre/Final.png)
 
-- **Path**: `photos/customerservice/`
-- **Examples**: Contact icons, live chat visuals, support team photos.
+## 5. CustomerService Sections Overview
 
-### 5. About Us
-Images that represent the company, team, or mission.
+### Customer
+![Dashboard Preview Light Mode](CustomerServiceScre/Customer.png)
+### InTouch
+![Dashboard Preview Light Mode](CustomerServiceScre/InTouch.png)
+### Faq
+![Dashboard Preview Light Mode](CustomerServiceScre/Faq.png)
+### Call
+![Dashboard Preview Light Mode](CustomerServiceScre/Call.png)
 
-- **Path**: `photos/aboutus/`
-- **Examples**: Team photos, office images, mission statement visuals.
+## 6. AboutUs Sections Overview
 
-### 6. Testimonials
-Photos associated with customer reviews and feedback.
+### Story
+![Dashboard Preview Light Mode](AboutScre/Story.png)
+### Mission
+![Dashboard Preview Light Mode](AboutScre/Mission.png)
+### Our
+![Dashboard Preview Light Mode](AboutScre/Our.png)
+### Team
+![Dashboard Preview Light Mode](AboutScre/Team.png)
+### Reviews
+![Dashboard Preview Light Mode](AboutScre/Reviews.png)
 
-- **Path**: `photos/testimonials/`
-- **Examples**: Customer portraits, review graphics, testimonial banners.
 
-### 7. Blog
-Images used for blog posts and articles.
-
-- **Path**: `photos/blog/`
-- **Examples**: Blog headers, article visuals, featured images.
-
-### 8. Miscellaneous
-Any other photos that don't fit into the above categories.
-
-- **Path**: `photos/miscellaneous/`
-- **Examples**: Placeholder images, icons, and general-purpose photos.
-
----
-
-## File Naming Convention
-
-To maintain consistency, please use the following naming convention for all photos:
