@@ -1,4 +1,3 @@
-// Wait for DOM to fully load
 document.addEventListener("DOMContentLoaded", function() {
     // Elements
     const navbar = document.querySelector('.navbar');
