@@ -7,10 +7,15 @@ This README outlines the photo structure for different sections of the EcoFlow W
 Below are the eight sections where photos are categorized:
 
 ### 1. Home
-Photos used on the home page, including banners, headers, and promotional materials.
-
-- **Path**: `photos/home/`
-- **Examples**: Hero images, slideshow banners, featured product displays.
+- **Path**: `HomeScre/Home.png`
+-  Features
+- **Path**: `HomeScre/Features.png`
+- About
+- **Path**: `HomeScre/About.png`
+- Products
+- **Path**: `HomeScre/Products.png`
+- Footer
+- **Path**: `HomeScre/Footer.png`
 
 ### 2. Purchase
 Photos related to the purchase process, showcasing products and purchase options.
