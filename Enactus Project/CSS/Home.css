@@ -794,6 +794,14 @@ button {
     .product-image {
         height: 150px; 
     }
+    
+    .cart-icon {
+        display: none;
+    }
+
+    .product-cart {
+        display: none;
+    }
 
     .product-name {
         font-size: 13px;
