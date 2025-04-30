@@ -1,20 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // ======= Start: Mobile Menu Toggle =======
-    const mobileMenuBtn = document.createElement('button');
-    mobileMenuBtn.className = 'mobile-menu-btn';
-    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-    document.querySelector('.navbar').appendChild(mobileMenuBtn);
-    
-    const navLinks = document.querySelector('.nav-links');
-    
-    mobileMenuBtn.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-        mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
-            ? '<i class="fas fa-times"></i>' 
-            : '<i class="fas fa-bars"></i>';
-    });
-    // ======= End: Mobile Menu Toggle =======
+   
 
     // ======= Start: Form Validation =======
     const contactForm = document.querySelector('.contact-right form');
