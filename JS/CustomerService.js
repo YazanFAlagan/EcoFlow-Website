@@ -16,28 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     // ======= End: Mobile Menu Toggle =======
 
-    // ======= Start: Scroll Animation =======
-    const fadeElements = document.querySelectorAll('.contact-left, .contact-right, .faq-left, .faq-right, .faq, .cta-content');
-    
-    fadeElements.forEach(element => {
-        element.classList.add('fade-in');
-    });
-    
-    function checkFade() {
-        fadeElements.forEach(element => {
-            const elementTop = element.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            
-            if (elementTop < windowHeight - 100) {
-                element.classList.add('active');
-            }
-        });
-    }
-    
-    checkFade();
-    // We'll call checkFade() again in scroll listener below
-    // ======= End: Scroll Animation =======
-
     // ======= Start: Form Validation =======
     const contactForm = document.querySelector('.contact-right form');
     
@@ -88,55 +66,5 @@ document.addEventListener('DOMContentLoaded', function() {
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
+})
     // ======= End: Form Validation =======
-
-    // ======= Start: Scroll to Top Button =======
-    const scrollTopBtn = document.createElement('div');
-    scrollTopBtn.className = 'scroll-top';
-    scrollTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-    document.body.appendChild(scrollTopBtn);
-    
-    scrollTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-    // ======= End: Scroll to Top Button =======
-
-    // ======= Start: Unified Scroll Handler =======
-    const navbar = document.querySelector('.navbar');
-    let lastScrollY = 0;
-
-    window.addEventListener('scroll', function() {
-        const currentScrollY = window.scrollY;
-
-        // Navbar hide/show on scroll direction
-        if (currentScrollY > lastScrollY && currentScrollY > 100) {
-            navbar.classList.add('hidden');
-        } else {
-            navbar.classList.remove('hidden');
-        }
-
-        // Navbar styling on scroll
-        if (currentScrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-
-        // Scroll to top button visibility
-        if (currentScrollY > 300) {
-            scrollTopBtn.classList.add('active');
-        } else {
-            scrollTopBtn.classList.remove('active');
-        }
-
-        // Trigger fade-in animation
-        checkFade();
-
-        lastScrollY = currentScrollY;
-    });
-    // ======= End: Unified Scroll Handler =======
-
-});
