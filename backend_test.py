@@ -125,9 +125,10 @@ class EcoFlowAPITest(unittest.TestCase):
                 if "total" in cart:
                     self.assertGreater(cart["total"], 0, "Cart total is zero")
                 
-                print(f"✅ Get cart passed - Items: {len(cart['items'])}")
+                print(f"✅ Get cart passed - Items: {len(cart['items'])}, Total: ${cart.get('total', 'N/A')}")
                 for item in cart["items"]:
-                    print(f"   - {item['product']['name']} x {item['quantity']}")
+                    product_name = item.get('product', {}).get('name', 'Unknown Product')
+                    print(f"   - {product_name} x {item['quantity']}")
             else:
                 print("✅ Get cart passed - Cart is empty")
         except Exception as e:
