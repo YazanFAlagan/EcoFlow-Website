@@ -100,7 +100,9 @@ class EcoFlowAPITest(unittest.TestCase):
                 timeout=self.timeout
             )
             self.assertEqual(response.status_code, 200)
-            print(f"✅ Add to cart passed")
+            data = response.json()
+            self.assertIn("message", data)
+            print(f"✅ Add to cart passed - {data['message']}")
         except Exception as e:
             print(f"❌ Add to cart failed: {str(e)}")
             self.fail(f"Add to cart failed: {str(e)}")
