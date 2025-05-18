@@ -4,7 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 from dotenv import load_dotenv
 import uuid
-from typing import List, Optional, Enum
+from typing import List, Optional
+from enum import Enum
 from pydantic import BaseModel, Field
 from datetime import datetime
 
