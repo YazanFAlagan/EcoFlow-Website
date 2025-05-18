@@ -189,16 +189,29 @@ class EcoFlowAPITest(unittest.TestCase):
             self.fail(f"Remove from cart failed: {str(e)}")
 
 if __name__ == "__main__":
-    # Run the tests in order
-    test_suite = unittest.TestSuite()
-    test_suite.addTest(EcoFlowAPITest('test_01_health_check'))
-    test_suite.addTest(EcoFlowAPITest('test_02_get_products'))
-    test_suite.addTest(EcoFlowAPITest('test_03_get_product_by_id'))
-    test_suite.addTest(EcoFlowAPITest('test_04_create_cart'))
-    test_suite.addTest(EcoFlowAPITest('test_05_add_to_cart'))
-    test_suite.addTest(EcoFlowAPITest('test_06_get_cart'))
-    test_suite.addTest(EcoFlowAPITest('test_07_update_cart_item'))
-    test_suite.addTest(EcoFlowAPITest('test_08_remove_from_cart'))
+    # Run the tests individually to avoid timeout issues
+    test_cases = [
+        'test_01_health_check',
+        'test_02_get_products',
+        'test_03_get_product_by_id',
+        'test_04_create_cart',
+        'test_05_add_to_cart',
+        'test_06_get_cart',
+        'test_07_update_cart_item',
+        'test_08_remove_from_cart'
+    ]
     
-    runner = unittest.TextTestRunner(verbosity=2)
-    runner.run(test_suite)
+    all_passed = True
+    for test_case in test_cases:
+        test_suite = unittest.TestSuite()
+        test_suite.addTest(EcoFlowAPITest(test_case))
+        runner = unittest.TextTestRunner(verbosity=2)
+        result = runner.run(test_suite)
+        if not result.wasSuccessful():
+            all_passed = False
+            print(f"❌ Test {test_case} failed")
+    
+    if all_passed:
+        print("\n✅ All backend API tests passed successfully!")
+    else:
+        print("\n❌ Some backend API tests failed")
