@@ -10,7 +10,7 @@ interface ProductsPageProps {
 const ProductsPage: React.FC<ProductsPageProps> = ({ products, addToCart }) => {
   const [categoryFilter, setCategoryFilter] = useState<string>('all');
   
-  const categories = ['all', ...new Set(products.map(product => product.category.toLowerCase()))];
+  const categories = ['all', ...Array.from(new Set(products.map(product => product.category.toLowerCase())))];
   
   const filteredProducts = categoryFilter === 'all' 
     ? products 
