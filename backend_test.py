@@ -2,6 +2,7 @@ import requests
 import unittest
 import uuid
 import json
+import os
 
 class EcoFlowAPITest(unittest.TestCase):
     def __init__(self, *args, **kwargs):
